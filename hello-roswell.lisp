@@ -35,7 +35,7 @@
 (runsh "apt-cache search --names-only '^cl-.*'")
 (runsh "git init"
        "git status"
-       "'# hello-cl' >> README.md"
+       "echo '# hello-cl' >> README.md"
        "git add -A"
        "git commit -m 'Say hi to common-lisp'"
        "git remote add origin https://github.com/pozorfluo/hello-cl.git")
