@@ -38,5 +38,4 @@
        "'# hello-cl' >> README.md"
        "git add -A"
        "git commit -m 'Say hi to common-lisp'"
-       "git remote add origin https://github.com/pozorfluo/hello-cl.git"
-       "git push -u origin master")
+       "git remote add origin https://github.com/pozorfluo/hello-cl.git")
