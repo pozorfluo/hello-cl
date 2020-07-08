@@ -39,3 +39,17 @@
        "git add -A"
        "git commit -m 'Say hi to common-lisp'"
        "git remote add origin https://github.com/pozorfluo/hello-cl.git")
+
+;; -----------------------------------------------------------------------------
+(defun powerset(set)
+    (if set (mapcan (lambda (x) (list (cons (car set) x) x))
+        (powerset(cdr set)))
+        '(())))
+
+(powerset '(l i s p y c o m m o n))
+
+(nconc '(ABC A B) '(A B) '(YUI O))
+(mapcar #'cons '((1 a) (2 b) (3 c)) '((1 a) (2 b) (3 c)))
+(mapcar #'car '((1 a) (2 b) (3 c)))
+(mapcar #'abs '(1 4 -4 4 -5))
+(mapcan #'cdr '((rose violet) (daisy buttercup)))
